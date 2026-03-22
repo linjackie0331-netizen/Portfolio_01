@@ -147,7 +147,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:54px;display:flex;ali
 .btn-cta-li:hover{border-color:rgba(255,255,255,.55);color:#fff !important;}
 
 /* SCROLL REVEAL */
-.rv{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease;}
+.rv{opacity:1;transform:none;}
 .rv.in{opacity:1;transform:none;}
 .d1{transition-delay:.07s;}.d2{transition-delay:.14s;}.d3{transition-delay:.21s;}.d4{transition-delay:.28s;}
 
@@ -210,7 +210,7 @@ nav{padding:0 16px;}
 
 <nav>
   <div class="nav-id">
-    <span class="nav-name">Jackie Lin &#26519;&#23376;&#23431;</span>
+    <span class="nav-name">Jackie Lin &#26519;&#23376;&#23461;</span>
     <span class="nav-role">Senior Brand Manager</span>
   </div>
   <div class="nav-links">
@@ -227,7 +227,7 @@ nav{padding:0 16px;}
 <section id="hero">
   <div class="hero-left">
     <span class="hero-eye">Senior Brand Manager Portfolio &middot; 2026</span>
-    <h1 class="hero-name">Jackie Lin<span class="hero-zh">&#26519;&#23376;&#23431;</span></h1>
+    <h1 class="hero-name">Jackie Lin<span class="hero-zh">&#26519;&#23376;&#23461;</span></h1>
     <p class="hero-desc">14 years directing brand strategy, GTM execution, and P&amp;L management for premium consumer brands across Taiwan and international markets. Iowa State University MBA &middot; TOEFL 103 &middot; TOEIC Gold &middot; 34+ Certifications.</p>
     <div class="hero-btns">
       <a href="#why" class="btn-p">View Candidacy</a>
@@ -487,10 +487,8 @@ nav{padding:0 16px;}
 <script>
 (function(){
 // Scroll reveal
-var io = new IntersectionObserver(function(entries){
-  entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('in'); });
-},{threshold:0.07});
-document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+// Make all content immediately visible (no scroll-hide)
+document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
 
 // Email links - assembled at runtime so Cloudflare cannot obfuscate
 var u='lin.jackie';var d='0331';var h='@gmail.com';
