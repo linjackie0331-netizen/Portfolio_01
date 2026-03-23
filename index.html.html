@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Jackie Lin - Senior Brand Manager Portfolio 2026"/>
+<title>Jackie Lin - Senior Brand Manager Portfolio 2026</title>
+<style>
+:root{
+  --indigo:#1A365D;--indigo-dk:#0F2240;--steel:#2B5F8C;
+  --steel-lt:#D0E3F0;--mist:#F6F4F0;--mist-dk:#E8E5E0;
+  --body:#2D2D2D;--mid:#6B7280;--rule:rgba(43,95,140,.14);
+  --f:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;max-width:100%;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--f);background:var(--mist);color:var(--body);overflow-x:hidden;line-height:1.7;word-break:break-word;overflow-wrap:break-word;}
+::selection{background:var(--steel-lt);color:var(--indigo);}
+img{max-width:100%;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 60px;background:rgba(246,244,240,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule);}
+.nav-id{display:flex;align-items:baseline;gap:12px;}
+.nav-name{font-size:1rem;font-weight:700;color:var(--indigo);}
+.nav-role{font-size:.72rem;color:var(--mid);letter-spacing:.04em;}
+.nav-links{display:flex;gap:32px;}
+.nav-links a{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color .2s;}
+.nav-links a:hover{color:var(--indigo);}
+.nav-cta{padding:7px 18px;background:var(--indigo);color:#fff !important;border-radius:2px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s;}
+.nav-cta:hover{background:var(--steel);}
+
+/* HERO */
+#hero{min-height:100vh;padding:116px 60px 80px;background:var(--indigo);display:grid;grid-template-columns:1fr 380px;gap:80px;align-items:center;position:relative;overflow:hidden;}
+#hero::before{content:'';position:absolute;top:0;right:0;width:42%;height:100%;background:linear-gradient(160deg,var(--indigo-dk) 0%,transparent 100%);clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);opacity:.5;pointer-events:none;}
+#hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:64px;background:var(--mist);clip-path:polygon(0 100%,100% 100%,100% 30%,0 100%);}
+.hero-left{position:relative;z-index:1;}
+.hero-eye{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--steel-lt);margin-bottom:18px;}
+.hero-eye::before{content:'-- ';}
+.hero-name{font-size:clamp(2.8rem,5vw,4.6rem);font-weight:700;color:#fff;line-height:1.04;margin-bottom:6px;letter-spacing:-.02em;}
+.hero-zh{display:block;font-size:clamp(1.3rem,2.2vw,1.9rem);color:var(--steel-lt);font-weight:400;}
+.hero-desc{font-size:.93rem;color:rgba(255,255,255,.56);line-height:1.75;max-width:460px;margin:22px 0 32px;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-p{padding:11px 24px;background:var(--steel);color:#fff !important;text-decoration:none;font-weight:700;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:background .2s;display:inline-block;}
+.btn-p:hover{background:#3474a8;}
+.btn-g{padding:11px 24px;border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.7) !important;text-decoration:none;font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:all .2s;display:inline-block;}
+.btn-g:hover{border-color:rgba(255,255,255,.55);color:#fff !important;}
+.hero-kpis{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.kpi{padding:22px 18px;background:rgba(255,255,255,.05);border:1px solid rgba(208,227,240,.16);border-radius:2px;transition:border-color .25s;}
+.kpi:hover{border-color:rgba(208,227,240,.38);}
+.kpi-n{font-size:2.5rem;font-weight:700;color:var(--steel-lt);line-height:1;letter-spacing:-.02em;}
+.kpi-l{font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-top:8px;line-height:1.45;}
+
+/* SECTIONS */
+.sec{padding:88px 60px;}
+.si{max-width:1080px;margin:0 auto;}
+.s-eye{display:block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--steel);margin-bottom:10px;}
+.s-title{font-size:clamp(1.8rem,2.8vw,2.5rem);font-weight:700;color:var(--indigo);line-height:1.12;margin-bottom:52px;letter-spacing:-.01em;}
+.s-rule{width:40px;height:3px;background:var(--steel);margin-top:14px;}
+
+/* WHY */
+#why{background:#fff;}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--rule);border-radius:3px;overflow:hidden;}
+.why-col{padding:40px 36px;}
+.why-col+.why-col{border-left:1px solid var(--rule);}
+.why-col-lbl{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--steel);margin-bottom:20px;display:block;}
+.why-ul{list-style:none;}
+.why-ul li{display:block;margin-bottom:16px;font-size:.9rem;line-height:1.68;color:var(--body);padding-left:1.4em;position:relative;}
+.why-ul li::before{content:'--';color:var(--steel);font-weight:700;position:absolute;left:0;top:0;}
+.kw{font-weight:700;color:var(--indigo);}
+
+/* TIMELINE */
+#career{background:var(--mist);}
+.tl{display:grid;grid-template-columns:200px 1fr;}
+.tl-item{display:contents;}
+.tl-l{padding:0 28px 40px 0;text-align:right;border-right:2px solid var(--rule);position:relative;}
+.tl-r{padding:0 0 40px 30px;}
+.tl-item:last-child .tl-l,.tl-item:last-child .tl-r{padding-bottom:0;}
+.tl-dot{width:10px;height:10px;border-radius:50%;background:var(--steel);border:2px solid var(--mist);box-shadow:0 0 0 1px var(--steel);position:absolute;right:-6px;top:6px;}
+.tl-period{font-size:.72rem;font-weight:700;letter-spacing:.05em;color:var(--steel);margin-bottom:4px;}
+.tl-org{font-size:.77rem;color:var(--mid);}
+.tl-title{font-size:1.06rem;font-weight:700;color:var(--indigo);margin-bottom:5px;line-height:1.3;}
+.tl-ctx{font-size:.82rem;color:var(--mid);font-style:italic;margin-bottom:8px;}
+.tl-desc{font-size:.87rem;color:var(--body);line-height:1.68;margin-bottom:10px;}
+.tl-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.tag{padding:3px 10px;background:var(--mist);border:1px solid var(--mist-dk);border-radius:2px;font-size:.71rem;color:var(--body);}
+.tag.hl{background:rgba(43,95,140,.06);border-color:rgba(43,95,140,.2);color:var(--steel);font-weight:700;}
+
+/* CASES */
+#cases{background:#fff;}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.case{background:var(--mist);border:1px solid var(--rule);border-radius:3px;padding:28px 24px;position:relative;cursor:pointer;transition:border-color .2s,background .2s;}
+.case:hover,.case.active{border-color:var(--steel);background:#fff;}
+.case-bar{position:absolute;top:0;left:0;right:0;height:3px;background:var(--steel);}
+.case-brand{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin-bottom:8px;}
+.case-title{font-size:1rem;font-weight:700;color:var(--indigo);margin-bottom:12px;line-height:1.35;}
+.case-lbl{font-size:.64rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mid);margin:10px 0 4px;}
+.case-txt{font-size:.84rem;line-height:1.65;color:var(--body);}
+.case-res{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+.res{padding:3px 10px;border:1px solid rgba(43,95,140,.24);border-radius:2px;font-size:.73rem;font-weight:700;color:var(--steel);}
+
+/* EXPERTISE */
+#expertise{background:var(--indigo);}
+#expertise .s-eye{color:var(--steel-lt);}
+#expertise .s-title{color:#fff;}
+#expertise .s-rule{background:var(--steel-lt);}
+.exp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(208,227,240,.08);}
+.exp-cell{padding:26px 20px;background:var(--indigo);cursor:pointer;transition:background .2s;}
+.exp-cell:hover,.exp-cell.active{background:var(--steel);}
+.exp-num{font-size:.66rem;font-weight:700;letter-spacing:.1em;color:var(--steel-lt);margin-bottom:8px;}
+.exp-cell:hover .exp-num,.exp-cell.active .exp-num{color:#fff;}
+.exp-title{font-size:.96rem;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3;}
+.exp-desc{font-size:.79rem;color:rgba(255,255,255,.42);line-height:1.58;}
+.exp-cell:hover .exp-desc,.exp-cell.active .exp-desc{color:rgba(255,255,255,.78);}
+
+/* AI TOOLS */
+#ai-tools{background:var(--indigo-dk);}
+#ai-tools .s-eye{color:var(--steel-lt);}
+#ai-tools .s-title{color:#fff;}
+#ai-tools .s-rule{background:var(--steel-lt);}
+.ai-intro{font-size:.92rem;color:rgba(255,255,255,.5);max-width:620px;margin-bottom:36px;line-height:1.7;}
+.ai-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.ai-card{background:#fff;border-radius:4px;padding:26px 18px 20px;display:flex;flex-direction:column;align-items:center;text-align:center;cursor:pointer;border:2px solid transparent;transition:transform .18s,box-shadow .18s,background .18s,border-color .18s;}
+.ai-card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(26,54,93,.12);border-color:rgba(43,95,140,.3);background:#f5f9fd;}
+.ai-card.active{transform:translateY(-4px);box-shadow:0 12px 28px rgba(26,54,93,.2);border-color:var(--steel);background:#ddeaf5;}
+.ai-icon{width:48px;height:48px;margin-bottom:12px;border-radius:12px;background:var(--indigo);display:flex;align-items:center;justify-content:center;transition:background .18s;}
+.ai-card:hover .ai-icon,.ai-card.active .ai-icon{background:var(--steel);}
+.ai-icon svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.ai-name{font-size:.86rem;font-weight:700;color:var(--indigo);transition:color .18s;margin-top:2px;}
+.ai-card:hover .ai-name,.ai-card.active .ai-name{color:var(--steel);}
+
+/* TOOLKIT */
+#toolkit{background:var(--mist);}
+.tk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;}
+.tk-lbl{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--steel);margin-bottom:14px;padding-bottom:9px;border-bottom:2px solid var(--rule);}
+.tk-chips{display:flex;flex-wrap:wrap;gap:8px;}
+.tk-chip{padding:5px 11px;background:#fff;border:1px solid var(--mist-dk);border-radius:2px;font-size:.78rem;cursor:pointer;transition:background .15s,border-color .15s,color .15s;}
+.tk-chip:hover,.tk-chip.active{background:var(--steel);border-color:var(--steel);color:#fff;}
+
+/* CTA */
+#cta{background:var(--indigo);text-align:center;padding:88px 60px;}
+#cta .s-eye{color:var(--steel-lt);}
+#cta .s-title{color:#fff;margin-bottom:14px;}
+.cta-sub{font-size:.93rem;color:rgba(255,255,255,.55);max-width:520px;margin:0 auto 36px;line-height:1.75;}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn-cta-li{padding:11px 24px;border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.7) !important;text-decoration:none;font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;border-radius:2px;transition:all .2s;display:inline-block;}
+.btn-cta-li:hover{border-color:rgba(255,255,255,.55);color:#fff !important;}
+
+/* SCROLL REVEAL */
+.rv{opacity:1;transform:none;}
+.rv.in{opacity:1;transform:none;}
+.d1{transition-delay:.07s;}.d2{transition-delay:.14s;}.d3{transition-delay:.21s;}.d4{transition-delay:.28s;}
+
+/* TABLET */
+@media(max-width:900px){
+  nav{padding:0 24px;}
+  .nav-links{display:none;}
+  .sec{padding:72px 28px;}
+  #hero{grid-template-columns:1fr;padding:100px 28px 56px;gap:36px;min-height:auto;}
+  #hero::after{display:none;}
+  .hero-kpis{grid-template-columns:1fr 1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .why-col+.why-col{border-left:none;border-top:1px solid var(--rule);}
+  .why-col{padding:28px 24px;}
+  .tl{grid-template-columns:130px 1fr;}
+  .case-grid{grid-template-columns:1fr 1fr;gap:14px;}
+  .exp-grid{grid-template-columns:repeat(2,1fr);}
+  .ai-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .tk-grid{grid-template-columns:1fr;gap:24px;}
+  .s-title{margin-bottom:36px;}
+}
+/* MOBILE */
+@media(max-width:480px){
+  nav{padding:0 16px;}
+  .nav-cta{display:none;}
+  .sec{padding:56px 16px;}
+  #hero{padding:90px 16px 48px;gap:28px;}
+  .hero-desc{font-size:.87rem;margin:16px 0 24px;}
+  .hero-btns{flex-direction:column;}
+  .btn-p,.btn-g{text-align:center;padding:12px 16px;}
+  .kpi{padding:14px 10px;}
+  .kpi-n{font-size:1.7rem;}
+  .kpi-l{font-size:.6rem;}
+  .why-col{padding:20px 16px;}
+  .tl{grid-template-columns:1fr;}
+  .tl-l{border-right:none;text-align:left;padding:0 0 6px 0;border-bottom:2px solid var(--rule);}
+  .tl-r{padding:12px 0 28px 0;}
+  .tl-item:last-child .tl-l{border-bottom:2px solid var(--rule);}
+  .tl-item:last-child .tl-r{padding-bottom:0;}
+  .case-grid{grid-template-columns:1fr;gap:14px;}
+  .exp-grid{grid-template-columns:1fr 1fr;gap:2px;}
+  .exp-cell{padding:20px 14px;}
+  .ai-grid{grid-template-columns:1fr 1fr;gap:10px;}
+  .ai-card{padding:18px 12px 14px;}
+  .ai-icon{width:40px;height:40px;}
+  .ai-name{font-size:.78rem;}
+  .s-title{font-size:clamp(1.5rem,6vw,2rem);margin-bottom:28px;}
+  #cta{padding:64px 16px;}
+  .cta-btns{flex-direction:column;align-items:stretch;}
+  .cta-btns a,.btn-cta-li{text-align:center;}
+}
+/* SMALL MOBILE */
+@media(max-width:360px){
+  .exp-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-id">
+    <span class="nav-name">Jackie Lin &#26519;&#23376;&#23461;</span>
+    <span class="nav-role">Senior Brand Manager</span>
+  </div>
+  <div class="nav-links">
+    <a href="#why">Why Jackie</a>
+    <a href="#career">Career</a>
+    <a href="#cases">Cases</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#ai-tools">AI Tools</a>
+    <a href="#cta">Contact</a>
+  </div>
+  <a href="#cta" class="nav-cta" id="nav-email">Get in Touch</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-left">
+    <span class="hero-eye">Senior Brand Manager Portfolio &middot; 2026</span>
+    <h1 class="hero-name">Jackie Lin<span class="hero-zh">&#26519;&#23376;&#23461;</span></h1>
+    <p class="hero-desc">14 years directing brand strategy, GTM execution, and P&amp;L management for premium consumer brands across Taiwan and international markets. Iowa State University MBA &middot; TOEFL 103 &middot; TOEIC Gold &middot; 34+ Certifications.</p>
+    <div class="hero-btns">
+      <a href="#why" class="btn-p">View Candidacy</a>
+      <a href="#" class="btn-g" id="hero-email">lin.jackie0331&#64;gmail.com</a>
+    </div>
+  </div>
+  <div class="hero-kpis">
+    <div class="kpi rv"><div class="kpi-n">ROAS<br/>24</div><div class="kpi-l">Peak Campaign<br/>Result</div></div>
+    <div class="kpi rv d1"><div class="kpi-n">&yen;20M<sup style="font-size:1.2rem">+</sup></div><div class="kpi-l">Annual A&amp;P<br/>Budget Managed</div></div>
+    <div class="kpi rv d2"><div class="kpi-n">14<sup style="font-size:1.2rem">yr</sup></div><div class="kpi-l">Brand Marketing<br/>Experience</div></div>
+    <div class="kpi rv d3"><div class="kpi-n">34<sup style="font-size:1.2rem">+</sup></div><div class="kpi-l">Professional<br/>Certifications</div></div>
+  </div>
+</section>
+
+<section id="why" class="sec">
+  <div class="si">
+    <div class="rv">
+      <span class="s-eye">Candidacy Brief &mdash; Suntory Beverage &amp; Food Taiwan</span>
+      <h2 class="s-title">Why Jackie is the strongest<br/>candidate for this role</h2>
+      <div class="s-rule"></div>
+    </div>
+    <div class="why-grid rv">
+      <div class="why-col">
+        <span class="why-col-lbl">Direct Qualification Match</span>
+        <ul class="why-ul">
+          <li>14 years of <span class="kw">brand and product marketing</span> &mdash; <span class="kw">strategic planning</span> to <span class="kw">campaign planning &amp; execution</span> across 5 simultaneous international premium brands, from concept to commercial result.</li>
+          <li>Personally owned the full <span class="kw">annual marketing plan</span> cycle, <span class="kw">A&amp;P budgeting</span> (&yen;20M+), and <span class="kw">P&amp;L management</span> with quarterly accountability to US, EU, and APAC HQs simultaneously.</li>
+          <li>Hands-on <span class="kw">new product development</span> and launch execution: Sp&auml;rkel sparkling water zero-to-market, iRobot flagship <span class="kw">NPD</span>, and <span class="kw">FMCG</span> co-brand product activation with Laoxiezhen &mdash; all with measurable commercial results.</li>
+          <li>34+ certifications in <span class="kw">digital marketing</span>, <span class="kw">data analysis</span>, AI productivity, and <span class="kw">project management</span>; Iowa State MBA; TOEFL 103, TOEIC Gold; represented Taiwan in APAC brand reviews with US and EU HQs.</li>
+          <li><span class="kw">Data-driven</span> methodology at every stage: Power BI, Looker Studio, GA4, and real-time attribution used weekly for <span class="kw">budgeting</span> decisions, campaign optimisation, and executive reporting.</li>
+        </ul>
+      </div>
+      <div class="why-col">
+        <span class="why-col-lbl">Differentiating Strengths</span>
+        <ul class="why-ul">
+          <li><span class="kw">Marketing communications</span> and <span class="kw">holistic communication</span> programmes across 360&deg; channels in one integrated calendar &mdash; paid media, earned PR, KOL/KOC seeding, omnichannel retail, LINE CRM automation &mdash; consistently above benchmark.</li>
+          <li>Commercial instinct that bridges <span class="kw">brand and product marketing</span> directly to revenue: converted FMCG partner Laoxiezhen&rsquo;s corporate gifting channel into &yen;1M+ annual procurement contracts two consecutive years via co-marketing proposal, no sales team involved.</li>
+          <li>AI-augmented daily workflow: Claude, ChatGPT, Perplexity, NotebookLM, and Gemini Suite embedded for campaign research, brief writing, and competitive analysis &mdash; faster decisions, consistently higher output quality.</li>
+          <li>Proven <span class="kw">cross-functional</span> delivery under pressure: resolved Meta business account verification crisis in 7 days coordinating Finance and IT; completed 108-hour financial reporting certification to sharpen <span class="kw">P&amp;L management</span> literacy.</li>
+          <li>Results compound year over year: 20%+ YOY revenue growth, ROAS 2&ndash;3&times; category average, CPA improvement in every major <span class="kw">campaign planning &amp; execution</span> cycle &mdash; sustained across three separate brand portfolios.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="career" class="sec">
+  <div class="si">
+    <div class="rv"><span class="s-eye">Career Arc</span><h2 class="s-title">14 years. Always in brand.</h2><div class="s-rule"></div></div>
+    <div class="tl">
+
+      <div class="tl-item rv">
+        <div class="tl-l"><div style="position:relative"><div class="tl-dot"></div><div class="tl-period">2023 &ndash; Present</div><div class="tl-org">Highspeed Digital Co., Ltd.</div></div></div>
+        <div class="tl-r">
+          <div class="tl-title">Marketing Manager</div>
+          <div class="tl-ctx">Premium home appliance distributor (100&ndash;500 employees) &mdash; iRobot &middot; Blueair &middot; SteamOne &middot; Sp&auml;rkel &middot; Stadler Form</div>
+          <div class="tl-desc">Directed B2B2C brand and product marketing for 5 international premium brands. Owned &yen;20M+ annual A&amp;P budget with full P&amp;L accountability and a 5-person cross-functional team. Deployed O+O omnichannel journey and LINE CRM automation driving <strong>202% YOY follower growth</strong>. Led SteamOne KOL precision seeding with behavioural data taxonomy &mdash; <strong>85&ndash;122% engagement rate</strong>, 50+ ppts above EU HQ benchmark. Delivered 20% YOY revenue growth across the portfolio.</div>
+          <div class="tl-tags"><span class="tag hl">Brand Strategy</span><span class="tag hl">P&amp;L Management</span><span class="tag hl">&yen;20M+ A&amp;P</span><span class="tag hl">202% LINE Growth</span><span class="tag hl">85&ndash;122% KOL Engagement</span><span class="tag">NPD Launch</span><span class="tag">OKR Framework</span><span class="tag">O+O Omnichannel</span><span class="tag">AI Tools Daily</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-l"><div style="position:relative"><div class="tl-dot"></div><div class="tl-period">2019 &ndash; 2022</div><div class="tl-org">Highspeed Digital Co., Ltd.</div></div></div>
+        <div class="tl-r">
+          <div class="tl-title">Brand Marketing Asst. Manager &mdash; iRobot</div>
+          <div class="tl-ctx">Promoted from Supervisor after delivering ROAS 8 record (2013&ndash;2018)</div>
+          <div class="tl-desc">Formulated GTM strategy, holistic communication programmes, and 360&deg; campaign planning &amp; execution for Taiwan&rsquo;s #1 robot vacuum brand. Achieved <strong>ROAS 24</strong> on Double-11 &mdash; 3&times; category average of 5&ndash;8. Managed 400+ KOL ecosystem and closed &yen;1M+ FMCG co-marketing contracts with Laoxiezhen for two consecutive years. Structured HSBC EDM reaching 750K cardholders with 23% open rate and &yen;1.2M direct sales.</div>
+          <div class="tl-tags"><span class="tag hl">ROAS 24</span><span class="tag hl">GTM Strategy</span><span class="tag hl">400+ KOL Network</span><span class="tag hl">&yen;1M+ B2B Deals</span><span class="tag">IMC</span><span class="tag">HSBC EDM 750K</span><span class="tag">4A PR Management</span><span class="tag">NPD Launch</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-l"><div style="position:relative"><div class="tl-dot"></div><div class="tl-period">2013 &ndash; 2018</div><div class="tl-org">Highspeed Digital Co., Ltd.</div></div></div>
+        <div class="tl-r">
+          <div class="tl-title">Brand Marketing Supervisor &mdash; iRobot</div>
+          <div class="tl-ctx">First marketing hire for iRobot Taiwan &mdash; built the brand from scratch</div>
+          <div class="tl-desc">Managed &yen;2M+ performance marketing budget across Google, Meta, and Yahoo. Delivered <strong>ROAS 8</strong> vs. 3&ndash;5 industry average, 37% LINE open rate, 10%+ CTR. Built 16-member healthcare professional KOC ambassador programme driving <strong>SOV +30%</strong>. Achieved &yen;2M single-day trade show sales record across 4 annual events.</div>
+          <div class="tl-tags"><span class="tag hl">ROAS 8</span><span class="tag hl">SOV +30%</span><span class="tag hl">16 Healthcare KOC</span><span class="tag hl">37% LINE Open Rate</span><span class="tag">Data-Driven Marketing</span><span class="tag">WOM Strategy</span><span class="tag">Trade Marketing</span><span class="tag">&yen;2M Trade Show Record</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-l"><div style="position:relative"><div class="tl-dot"></div><div class="tl-period">2012 &ndash; 2013</div><div class="tl-org">Macy&rsquo;s Inc. &mdash; New York</div></div></div>
+        <div class="tl-r">
+          <div class="tl-title">SK-II Counter Manager (P&amp;G portfolio)</div>
+          <div class="tl-ctx">P&amp;G prestige skincare &mdash; launched SK-II&rsquo;s inaugural flagship counter in Macy&rsquo;s NYC</div>
+          <div class="tl-desc">Delivered <strong>&yen;9M quarterly revenue at 170% of target</strong> in the first season. Built 450+ VIP client base at &yen;20K average spend with 20% repurchase rate. Negotiated P&amp;G HQ exclusive resources to raise average transaction value. Won Macy&rsquo;s co-brand card enrolment award across all beauty brands.</div>
+          <div class="tl-tags"><span class="tag hl">&yen;9M at 170% Target</span><span class="tag hl">450+ VIPs</span><span class="tag hl">P&amp;G Brand Management</span><span class="tag">Premium Beauty Retail</span><span class="tag">CRM</span><span class="tag">HNW Client Management</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-l"><div style="position:relative"><div class="tl-dot"></div><div class="tl-period">2006 &ndash; 2009</div><div class="tl-org">2009 World Games OC Foundation</div></div></div>
+        <div class="tl-r">
+          <div class="tl-title">Marketing Specialist &mdash; Cultural Tourism</div>
+          <div class="tl-ctx">International marketing for a once-in-a-generation sports and cultural event in Kaohsiung</div>
+          <div class="tl-desc">Led international tourism marketing at Singapore Travel Expo. Campaign planning &amp; execution achieved full ticket sell-out <strong>2 months ahead of schedule</strong>, <strong>40,000+ international visits</strong>, and 20% uplift in per-capita spend. Recruited, trained, and managed a <strong>530-person bilingual operations team</strong> comprising 400 volunteers, 100 drivers, and 30 guides for 5,000 athletes and 20,000+ international guests.</div>
+          <div class="tl-tags"><span class="tag hl">40K+ Visitors</span><span class="tag hl">Sold Out 2 Months Early</span><span class="tag hl">530-Person Team</span><span class="tag">International IMC</span><span class="tag">Bilingual Operations</span><span class="tag">Event Marketing</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-l"><div style="position:relative"><div class="tl-period" style="color:var(--mid)">Education</div></div></div>
+        <div class="tl-r">
+          <div class="tl-title" style="font-size:.96rem">Iowa State University &mdash; Master of Business Administration (MBA) &middot; 2010&ndash;2012</div>
+          <div class="tl-ctx">Ames, Iowa, USA</div>
+          <div class="tl-desc" style="margin-top:8px">National University of Kaohsiung &mdash; BA Western Languages &middot; BA Asia-Pacific International Business &middot; 2002&ndash;2006</div>
+          <div class="tl-tags" style="margin-top:10px"><span class="tag hl">TOEFL 103</span><span class="tag hl">TOEIC Gold</span><span class="tag hl">GEPT Advanced</span><span class="tag hl">GMAT</span><span class="tag hl">34+ Certifications</span><span class="tag">Google Analytics</span><span class="tag">Meta Blueprint</span><span class="tag">HubSpot Certified</span><span class="tag">Power BI</span><span class="tag">GA4</span><span class="tag">Brand Mgmt (Kellogg)</span><span class="tag">108hr Financial Reporting</span><span class="tag">OKR Management</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="cases" class="sec">
+  <div class="si">
+    <div class="rv"><span class="s-eye">Case Studies</span><h2 class="s-title">The work, in detail.</h2><div class="s-rule"></div></div>
+    <div class="case-grid">
+
+      <div class="case rv" tabindex="0"><div class="case-bar"></div>
+        <div class="case-brand">Sp&auml;rkel &middot; New Brand GTM Launch &middot; 2023</div>
+        <h3 class="case-title">Zero-to-market launch &mdash; category benchmark broken in first season</h3>
+        <div class="case-lbl">Situation</div><p class="case-txt">Brand-new premium sparkling water appliance in Taiwan with zero brand awareness, no category precedent, and a single seasonal window.</p>
+        <div class="case-lbl">Action</div><p class="case-txt">Built full annual marketing plan and integrated campaign calendar. Tracked attribution weekly and shifted &yen;2.4M from broad PR to precision digital when early data showed stronger online conversion signals.</p>
+        <div class="case-lbl">Result</div>
+        <div class="case-res"><span class="res">ROAS 6+ (Category Best)</span><span class="res">750K Qualified Impressions</span><span class="res">CPA &ndash;50%</span><span class="res">20% YOY Revenue Growth</span></div>
+      </div>
+
+      <div class="case rv d1" tabindex="0"><div class="case-bar"></div>
+        <div class="case-brand">iRobot &middot; Double-11 Peak Campaign &middot; 2021</div>
+        <h3 class="case-title">ROAS 24 &mdash; 3&times; category average via dynamic real-time budget allocation</h3>
+        <div class="case-lbl">Situation</div><p class="case-txt">Double-11 was the year&rsquo;s highest-stakes campaign. Category ROAS benchmark: 5&ndash;8. Result needed to significantly outperform to justify the following year&rsquo;s increased HQ budget.</p>
+        <div class="case-lbl">Action</div><p class="case-txt">Engineered real-time cross-channel budget allocation model across Meta, Google, and LINE. Optimised creative by channel. Compressed agency feedback loops to weekly syncs for hours-not-weeks decisions.</p>
+        <div class="case-lbl">Result</div>
+        <div class="case-res"><span class="res">ROAS 24 (vs. 5&ndash;8 avg.)</span><span class="res">CPC &ndash;30% vs. Benchmark</span><span class="res">A&amp;P Below 15% Revenue</span><span class="res">Engagement +20% YOY</span></div>
+      </div>
+
+      <div class="case rv d2" tabindex="0"><div class="case-bar"></div>
+        <div class="case-brand">SteamOne &middot; KOL Precision Seeding &middot; 2023</div>
+        <h3 class="case-title">122% engagement vs. 70% EU benchmark &mdash; new category, limited budget</h3>
+        <div class="case-lbl">Situation</div><p class="case-txt">European HQ set a 70% engagement benchmark for Taiwan&rsquo;s social launch. Budget was limited; steam care was entirely unfamiliar to Taiwanese consumers.</p>
+        <div class="case-lbl">Action</div><p class="case-txt">Built a proprietary behavioural data taxonomy in Google Sheets to segment KOLs by lifestyle fit and audience authenticity rather than follower count. Briefed each KOL with personalised messaging frameworks.</p>
+        <div class="case-lbl">Result</div>
+        <div class="case-res"><span class="res">85&ndash;122% Engagement Rate</span><span class="res">50+ ppts Above EU Target</span><span class="res">APAC HQ Recognition</span><span class="res">Category Awareness Built</span></div>
+      </div>
+
+      <div class="case rv" tabindex="0"><div class="case-bar"></div>
+        <div class="case-brand">iRobot &middot; Flagship NPD Launch &middot; 2022</div>
+        <h3 class="case-title">40% pre-order rate before launch day via holistic IMC</h3>
+        <div class="case-lbl">Situation</div><p class="case-txt">iRobot&rsquo;s most expensive model. Goal: establish premium price authority and drive pre-order velocity before in-store availability. No comparable precedent in Taiwan.</p>
+        <div class="case-lbl">Action</div><p class="case-txt">Directed 4A PR firm for media launch event (&yen;4M+ earned media, 125% impression target). Secured KOC Tim&#21612; (100K Day-1 YouTube views). Integrated messaging across all retail, digital, and LINE CRM.</p>
+        <div class="case-lbl">Result</div>
+        <div class="case-res"><span class="res">&yen;4M+ Earned Media</span><span class="res">40% Pre-Order Rate</span><span class="res">125% Impression Target</span><span class="res">100K Day-1 KOC Views</span></div>
+      </div>
+
+      <div class="case rv d1" tabindex="0"><div class="case-bar"></div>
+        <div class="case-brand">iRobot &times; Laoxiezhen &middot; B2B Co-Marketing &middot; 2020&ndash;2022</div>
+        <h3 class="case-title">&yen;1M+ annual contracts &times; 2 years &mdash; zero additional A&amp;P spend</h3>
+        <div class="case-lbl">Situation</div><p class="case-txt">iRobot needed new revenue channels without additional A&amp;P. Corporate gifting was untapped. Laoxiezhen (&#32769;&#21327;&#29835;), Taiwan&rsquo;s premium gift food brand, had no technology partner for their corporate catalogue.</p>
+        <div class="case-lbl">Action</div><p class="case-txt">Identified the strategic fit independently and developed a full co-marketing proposal. Negotiated directly with Laoxiezhen&rsquo;s management, structured a co-branded product bundle aligned to their seasonal gifting calendar.</p>
+        <div class="case-lbl">Result</div>
+        <div class="case-res"><span class="res">&yen;1M+ Year 1 Contract</span><span class="res">&yen;1M+ Year 2 (Renewed)</span><span class="res">2-Year Preferred Partner</span><span class="res">Zero A&amp;P Spend</span></div>
+      </div>
+
+      <div class="case rv d2" tabindex="0"><div class="case-bar"></div>
+        <div class="case-brand">iRobot &times; HSBC &middot; CRM Email Campaign &middot; 2021</div>
+        <h3 class="case-title">&yen;1.2M direct sales from single EDM &mdash; 23% open rate, 750K cardholders</h3>
+        <div class="case-lbl">Situation</div><p class="case-txt">HSBC Taiwan offered co-marketing EDM placement to select premium partners. Campaign needed to convert cardholders with no prior iRobot relationship into buyers in a single send.</p>
+        <div class="case-lbl">Action</div><p class="case-txt">Designed full campaign: segmented cardholders by spend tier, structured cashback mechanic aligned to HSBC&rsquo;s rewards programme, and crafted creative brief translating iRobot&rsquo;s premium positioning into high-net-worth language.</p>
+        <div class="case-lbl">Result</div>
+        <div class="case-res"><span class="res">&yen;1.2M Direct Sales</span><span class="res">23% Open Rate</span><span class="res">750K Cardholders Reached</span><span class="res">Single Campaign ROI 5&times;+</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="expertise" class="sec">
+  <div class="si">
+    <div class="rv"><span class="s-eye">Core Competencies</span><h2 class="s-title">What I bring.</h2><div class="s-rule"></div></div>
+    <div class="exp-grid">
+      <div class="exp-cell rv" tabindex="0"><div class="exp-num">01</div><div class="exp-title">Brand &amp; Product Marketing</div><div class="exp-desc">Annual brand plan, brand architecture, positioning strategy, competitive analysis, GTM roadmap from consumer insight to launch</div></div>
+      <div class="exp-cell rv d1" tabindex="0"><div class="exp-num">02</div><div class="exp-title">NPD &amp; Product Launch</div><div class="exp-desc">New product development pipeline, launch playbooks, pre-launch seeding, launch-day coordination, post-launch performance tracking</div></div>
+      <div class="exp-cell rv d2" tabindex="0"><div class="exp-num">03</div><div class="exp-title">A&amp;P Budgeting &amp; P&amp;L</div><div class="exp-desc">&yen;20M+ annual budget ownership, agile mid-campaign reallocation, ROI attribution modelling, P&amp;L reporting, financial certification</div></div>
+      <div class="exp-cell rv d3" tabindex="0"><div class="exp-num">04</div><div class="exp-title">Integrated Marketing Comms</div><div class="exp-desc">Holistic 360&deg; campaign design, integrated marketing calendar, cross-channel message architecture, PR direction, agency management</div></div>
+      <div class="exp-cell rv" tabindex="0"><div class="exp-num">05</div><div class="exp-title">Data-Driven Analytics</div><div class="exp-desc">Power BI, Looker Studio, GA4, Excel dashboards &mdash; weekly attribution reporting, A/B test design, campaign performance diagnosis</div></div>
+      <div class="exp-cell rv d1" tabindex="0"><div class="exp-num">06</div><div class="exp-title">Omnichannel (O+O) &amp; CRM</div><div class="exp-desc">Digital-to-physical consumer journey design, LINE CRM automation, loyalty programme management, DTC channel strategy</div></div>
+      <div class="exp-cell rv d2" tabindex="0"><div class="exp-num">07</div><div class="exp-title">KOL / KOC Management</div><div class="exp-desc">400+ creator network across YouTube, IG, FB &mdash; behavioural segmentation taxonomy, content briefing, performance attribution</div></div>
+      <div class="exp-cell rv d3" tabindex="0"><div class="exp-num">08</div><div class="exp-title">Team &amp; Stakeholder Management</div><div class="exp-desc">5-person cross-functional team, OKR framework, MNC HQ liaison (US/EU/APAC), 4A agency direction, project management</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="ai-tools" class="sec">
+  <div class="si">
+    <div class="rv"><span class="s-eye">AI as a Force Multiplier</span><h2 class="s-title">Modern workflow.<br/>AI-augmented output.</h2><div class="s-rule"></div></div>
+    <p class="ai-intro rv">These are the AI tools embedded in my daily workflow &mdash; not experiments, but infrastructure that makes campaign research faster, briefs sharper, and competitive analysis more thorough.</p>
+    <div class="ai-grid">
+      <div class="ai-card rv" tabindex="0"><div class="ai-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg></div><div class="ai-name">Claude</div></div>
+      <div class="ai-card rv d1" tabindex="0"><div class="ai-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="ai-name">ChatGPT</div></div>
+      <div class="ai-card rv d2" tabindex="0"><div class="ai-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg></div><div class="ai-name">Perplexity</div></div>
+      <div class="ai-card rv d3" tabindex="0"><div class="ai-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="ai-name">NotebookLM</div></div>
+      <div class="ai-card rv" tabindex="0"><div class="ai-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></div><div class="ai-name">Gemini Suite</div></div>
+      <div class="ai-card rv d1" tabindex="0"><div class="ai-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/><line x1="19" y1="3" x2="19" y2="21"/></svg></div><div class="ai-name">CapCut</div></div>
+      <div class="ai-card rv d2" tabindex="0"><div class="ai-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div><div class="ai-name">Canva AI</div></div>
+      <div class="ai-card rv d3" tabindex="0"><div class="ai-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17 C1.5 8 11 0.5 20 6 C16.5 9 9 12 4 17 Z" fill="white"/><path d="M4 17 C3 14 2 12 2.5 10" stroke="white" stroke-width="1.8" stroke-linecap="round"/><circle cx="20.5" cy="5" r="1" fill="white"/><circle cx="22" cy="3" r="0.7" fill="white"/><circle cx="21" cy="2" r="0.5" fill="white"/></svg></div><div class="ai-name">Nano Banana</div></div>
+    </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="toolkit" class="sec">
+  <div class="si">
+    <div class="rv"><span class="s-eye">Digital Toolkit</span><h2 class="s-title">Platforms &amp; credentials.</h2><div class="s-rule"></div></div>
+    <div class="tk-grid rv">
+      <div>
+        <div class="tk-lbl">Analytics &amp; Reporting</div>
+        <div class="tk-chips">
+          <span class="tk-chip" tabindex="0">Power BI</span><span class="tk-chip" tabindex="0">Looker Studio</span><span class="tk-chip" tabindex="0">Google Analytics 4</span><span class="tk-chip" tabindex="0">Google Tag Manager</span><span class="tk-chip" tabindex="0">Excel Dashboard</span><span class="tk-chip" tabindex="0">Meta Ads Manager</span><span class="tk-chip" tabindex="0">YouTube Analytics</span>
+        </div>
+      </div>
+      <div>
+        <div class="tk-lbl">Channels &amp; Platforms</div>
+        <div class="tk-chips">
+          <span class="tk-chip" tabindex="0">Google Ads</span><span class="tk-chip" tabindex="0">Meta / IG Ads</span><span class="tk-chip" tabindex="0">LINE Ads + LAP</span><span class="tk-chip" tabindex="0">Yahoo Advertising</span><span class="tk-chip" tabindex="0">YouTube</span><span class="tk-chip" tabindex="0">LinkedIn Ads</span><span class="tk-chip" tabindex="0">Dcard</span><span class="tk-chip" tabindex="0">PTT / Mobile01</span><span class="tk-chip" tabindex="0">Shopee / Momo</span>
+        </div>
+      </div>
+      <div>
+        <div class="tk-lbl">Languages &amp; Credentials</div>
+        <div class="tk-chips">
+          <span class="tk-chip" tabindex="0">English &mdash; Fluent</span><span class="tk-chip" tabindex="0">TOEFL 103</span><span class="tk-chip" tabindex="0">TOEIC Gold</span><span class="tk-chip" tabindex="0">GEPT Advanced</span><span class="tk-chip" tabindex="0">GMAT</span><span class="tk-chip" tabindex="0">Mandarin &mdash; Native</span><span class="tk-chip" tabindex="0">Iowa State MBA</span><span class="tk-chip" tabindex="0">Google Analytics Cert.</span><span class="tk-chip" tabindex="0">Meta Blueprint</span><span class="tk-chip" tabindex="0">HubSpot Certified</span><span class="tk-chip" tabindex="0">Brand Mgmt (Kellogg)</span><span class="tk-chip" tabindex="0">108hr Financial Reporting</span><span class="tk-chip" tabindex="0">OKR Management</span><span class="tk-chip" tabindex="0">34+ Total Certifications</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta" class="sec">
+  <div class="si" style="text-align:center">
+    <span class="s-eye rv">Let&rsquo;s connect</span>
+    <h2 class="s-title rv">Ready to contribute from day one.</h2>
+    <p class="cta-sub rv">14 years of brand-building, P&amp;L management, and integrated campaign execution across Taiwan and international markets. One conversation to find out if it&rsquo;s a fit.</p>
+    <div class="cta-btns rv">
+      <a href="#" class="btn-p" id="cta-email">lin.jackie0331&#64;gmail.com</a>
+      <a href="https://www.linkedin.com/in/jackielin0331/" target="_blank" rel="noopener" class="btn-cta-li">LinkedIn Profile</a>
+    </div>
+    <p style="margin-top:28px;font-size:.77rem;color:rgba(255,255,255,.3)">+886-983-471-619 &middot; Taipei, Taiwan &middot; Available 1 month from offer</p>
+  </div>
+</section>
+
+<script>
+(function(){
+// Scroll reveal
+// Make all content immediately visible (no scroll-hide)
+document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+
+// Email links - assembled at runtime so Cloudflare cannot obfuscate
+var u='lin.jackie';var d='0331';var h='@gmail.com';
+var em=u+d+h;
+['hero-email','nav-email','cta-email'].forEach(function(id){
+  var el=document.getElementById(id);
+  if(el){el.href='mai'+'lto:'+em;}
+});
+
+// Grouped toggle
+function grpToggle(sel,grpSel){
+  document.querySelectorAll(sel).forEach(function(el){
+    el.addEventListener('click',function(){
+      var was=el.classList.contains('active');
+      var g=el.closest(grpSel);
+      if(g) g.querySelectorAll(sel).forEach(function(s){s.classList.remove('active');});
+      if(!was) el.classList.add('active');
+    });
+    el.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}
+    });
+  });
+}
+
+// Independent toggle
+function indToggle(sel){
+  document.querySelectorAll(sel).forEach(function(el){
+    el.addEventListener('click',function(){el.classList.toggle('active');});
+    el.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}
+    });
+  });
+}
+
+grpToggle('.case','.case-grid');
+grpToggle('.exp-cell','.exp-grid');
+grpToggle('.ai-card','.ai-grid');
+indToggle('.tk-chip');
+})();
+</script>
+</body>
+</html>
